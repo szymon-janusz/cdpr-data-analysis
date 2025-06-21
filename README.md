@@ -59,4 +59,4 @@ This project is open-source under the MIT License.
 ---
 
 **Maintained by**: [Szymon Janusz](https://github.com/szymon-janusz)  
-**Last Updated**: $(date +%Y-%m-%d)
+**Last Updated**: [$(date +%Y-%m-%d)](https://img.shields.io/github/last-commit/szymon-janusz/cdpr-data-analysis?style=flat-square)
