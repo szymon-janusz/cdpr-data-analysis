@@ -42,8 +42,7 @@ cdpr-data-analysis/
    - Q2 2015: 406k zł (Witcher 3 launch)
    - Q4 2020: 1.54M zł (Cyberpunk 2077 launch)
    - Q4 2023: 413k zł (Phantom Liberty DLC)
-3. **Growth Patterns**:
-   (Q2 2015 post-Witcher 3)
+3. **Growth Patterns** (Q2 2015 post-Witcher 3):
    - Highest YoY growth: +2832%
    - Largest QoQ jump: +14119% 
 
