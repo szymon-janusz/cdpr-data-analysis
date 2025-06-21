@@ -1,62 +1,85 @@
-# CDPR Revenue Analysis Project
+[[# CDPR Revenue Analysis Project
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/szymon-janusz/cdpr-data-analysis?style=flat-square)
 ![GitHub repo size](https://img.shields.io/github/repo-size/szymon-janusz/cdpr-data-analysis?style=flat-square)
 
-## 📌 Overview
-This project analyzes CD Projekt Red's (CDPR) quarterly revenue data from 2014 to 2024, with forecasts extending to 2026. The analysis includes historical trends, quarter-over-quarter (QoQ) and year-over-year (YoY) growth rates, and speculative forecasts considering potential DLC releases.
+An analytical Excel-based project examining how major events such as patches, DLCs, and media tie-ins affected quarterly revenue for CD PROJEKT between 2014 and 2025. 
 
-**GitHub Repository**: [szymon-janusz/cdpr-data-analysis](https://github.com/szymon-janusz/cdpr-data-analysis)
-
-## 📊 Key Features
-- **Comprehensive Revenue Analysis**: Quarterly sales figures from 2014-2024 with advanced Excel formulas
-- **Dynamic Forecasting**: Using `FORECAST.ETS` for time-series predictions
-- **Event Correlation**: Ties revenue spikes to game releases and updates
-- **Two Forecast Scenarios**: Baseline and DLC-optimized projections
-
-## 🔍 Key Insights
-1. **Record Quarters**:
-   - Q4 2020: 1.54M zł (Cyberpunk 2077 launch)
-   - Q4 2023: 413k zł (Phantom Liberty DLC)
-2. **Growth Patterns**:
-   - Highest YoY growth: +504% (2020)
-   - Largest QoQ jump: +263% (Q2 2015 post-Witcher 3)
-
-## 📈 Technical Implementation
-### Advanced Excel Features Used:
-```excel
-=FORECAST.ETS(target_date, values, timeline, [seasonality])
-=SUMIFS(sum_range, criteria_range1, criteria1, ...)
-=TEXTJOIN(", ", TRUE, FILTER(events, (dates>=start)*(dates<=end)))
-```
-
-### Data Processing:
-- Automated quarterly aggregations
-- Dynamic growth rate calculations
-- Seasonal adjustment factors
-
-## 📂 Project Structure
-```
-/cdpr-data-analysis
-│── CDPR_Revenue_Analysis.xlsx      # Main analysis workbook
-│── /docs                          # Additional documentation
-│── README.md                      # This file
-```
-
-## 🛠 How to Contribute
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/szymon-janusz/cdpr-data-analysis.git
-   ```
-2. Open `CDPR_Revenue_Analysis.xlsx`
-3. For forecast adjustments:
-   - Modify cells in "Prognoza z DLC" section
-   - Update seasonal parameters in `FORECAST.ETS` formulas
-
-## 📝 License
-This project is open-source under the MIT License.
+The goal: understand how impactful past updates were—and whether upcoming content (e.g., expansions or remasters) might result in measurable financial returns.
 
 ---
 
-**Maintained by**: [Szymon Janusz](https://github.com/szymon-janusz)  
-**Last Updated**: [$(date +%Y-%m-%d)](https://img.shields.io/github/last-commit/szymon-janusz/cdpr-data-analysis?style=flat-square)
+## 📁 Project Structure
+
+cdpr-data-analysis/
+│
+├── data/
+│ ├── CDPR_Revenue_Analysis.xlsx # Main Excel workbook: cleaned data, charts, forecasts
+│ └── key-financial-data-q1-2025-2.xlsx # source file (CD Projekt's report)
+│
+├── exports/
+│ ├── quarterly_revenues.png
+│ └── forecasts.png
+│
+└── README.md
+
+---
+
+## 📈 What This Project Covers
+
+- Historical quarterly revenue data (in thousands PLN)
+- Manually added context: patches, DLCs, platform updates, and events
+- Excel-based analysis and visualization
+- Prototype forecasting using Excel functions (`FORECAST.ETS`)
+- Scenario simulation for future expansions
+
+---
+
+## 🧠 Key Insights
+
+📌 Notable revenue spikes:
+1. **Record Quarters**:
+   - Q2 2015: 406k zł (Witcher 3 launch)
+   - Q4 2020: 1.54M zł (Cyberpunk 2077 launch)
+   - Q4 2023: 413k zł (Phantom Liberty DLC)
+3. **Growth Patterns**:
+   (Q2 2015 post-Witcher 3)
+   - Highest YoY growth: +2832%
+   - Largest QoQ jump: +14119% 
+
+---
+
+## 📊 Tools & Methods
+
+- **Excel** – for manual data cleaning, transformation, and visualization
+- **FORECAST.LINEAR** – used for projecting simple trends
+- **Annotations** – each quarter has optional comments tied to release or patch events
+- **Manual labeling** – patch/DLC milestones added to enhance understanding
+
+---
+
+## 📎 Notes
+
+- All financial data is sourced from CD Projekt’s **official quarterly reports**.
+- Revenue is expressed in **thousands of PLN (Polish złoty)**.
+- Forecasts are for demonstration purposes only and are **not financial advice**.
+
+---
+
+## 👤 Author
+
+**Szymon Janusz**  
+Data Analyst | SQL • Excel • Tableau  
+Fan of CDPR titles and digital game economies.
+
+---
+
+## 📄 License
+
+This project uses public financial data. All additional material is published under the [Creative Commons CC BY 4.0 License](https://creativecommons.org/licenses/by/4.0/).
+
+---
+
+## ⭐️ If you like the project...
+
+Feel free to fork, clone, or star ⭐ this repo to support future projects!
