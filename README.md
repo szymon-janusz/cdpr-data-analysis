@@ -10,7 +10,7 @@ The goal: understand how impactful past updates were—and whether upcoming cont
 ---
 
 ## 📁 Project Structure
-
+```
 cdpr-data-analysis/
 │
 ├── data/
@@ -22,7 +22,7 @@ cdpr-data-analysis/
 │ └── forecasts.png
 │
 └── README.md
-
+```
 ---
 
 ## 📈 What This Project Covers
