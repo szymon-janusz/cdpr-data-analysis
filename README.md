@@ -1,4 +1,4 @@
-[[# CDPR Revenue Analysis Project
+# CDPR Revenue Analysis Project
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/szymon-janusz/cdpr-data-analysis?style=flat-square)
 ![GitHub repo size](https://img.shields.io/github/repo-size/szymon-janusz/cdpr-data-analysis?style=flat-square)
