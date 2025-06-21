@@ -58,6 +58,17 @@ cdpr-data-analysis/
 
 ---
 
+## 📌 Next Steps / Extensions
+
+If you’d like to take this further:
+
+- Export data into SQL or Python and repeat the analysis using more advanced statistical models
+- Add user sentiment by integrating Steam review data or social media trends
+- Use Tableau/Power BI for an interactive version of the charts
+- Improve forecast logic with machine learning (ARIMA, Holt-Winters, etc.)
+
+---
+
 ## 📎 Notes
 
 - All financial data is sourced from CD Projekt’s **official quarterly reports**.
