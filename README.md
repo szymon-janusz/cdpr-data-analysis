@@ -21,7 +21,8 @@ cdpr-data-analysis/
 │ ├── quarterly_revenues.png
 │ └── forecasts.png
 │
-└── README.md
+├── README.md
+└── README_PL.md
 ```
 ---
 
