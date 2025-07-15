@@ -1,79 +1,102 @@
-# CDPR Revenue Analysis Project
+# CDPR Revenue & Sentiment Analysis Project
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/szymon-janusz/cdpr-data-analysis?style=flat-square)
 ![GitHub repo size](https://img.shields.io/github/repo-size/szymon-janusz/cdpr-data-analysis?style=flat-square)
 
-An analytical Excel-based project examining how major events such as patches, DLCs, and media tie-ins affected quarterly revenue for CD PROJEKT between 2014 and 2025. 
+An analytical project exploring how major content releases (patches, DLCs, media tie-ins) and player sentiment affected CD PROJEKT's revenue across titles like **The Witcher 3** and **Cyberpunk 2077**.
 
-The goal: understand how impactful past updates were—and whether upcoming content (e.g., expansions or remasters) might result in measurable financial returns.
+🔍 The goal: Evaluate whether upcoming expansions might bring measurable financial impact — based on historical patterns, user reviews, and revenue data.
 
 ---
 
 ## 📁 Project Structure
-```
+
 cdpr-data-analysis/
 │
 ├── data/
-│ ├── CDPR_Revenue_Analysis.xlsx # Main Excel workbook: cleaned data, charts, forecasts
-│ └── key-financial-data-q1-2025-2.xlsx # source file (CD Projekt's report)
+│ ├── CDPR_Revenue_Analysis.xlsx # Excel workbook: cleaned data, charts, forecasts
+│ ├── key-financial-data-q1-2025-2.xlsx # Raw financials from CDPR report
+│ ├── full_reviews_sentiment.csv # (Exported) sentiment data from Steam
+│ └── oracle_import.sql # SQL for table creation & inserts
 │
 ├── exports/
-│ ├── quarterly_revenues.png
-│ └── forecasts.png
+│ ├── witcher_chart.png
+│ ├── cyberpunk_chart.png
+│ └── tableau_dash_screenshots/
+│ ├── sentiment_vs_revenue.png
+│ └── dashboard_overview.png
+│
+├── tableau/
+│ └── sentiment_revenue_dashboard.twb # Tableau workbook file
 │
 ├── README.md
 └── README_PL.md
-```
+
 ---
 
 ## 📈 What This Project Covers
 
-- Historical quarterly revenue data (in thousands PLN)
-- Manually added context: patches, DLCs, platform updates, and events
-- Excel-based analysis and visualization
-- Prototype forecasting using Excel functions (`FORECAST.ETS`)
-- Scenario simulation for future expansions
+- 📊 Historical revenue data (2014–2025) for CDPR
+- 🛠️ Manual annotation of patches, DLCs, console updates
+- 📃 Steam sentiment analysis (700k+ reviews)
+- 🔮 Forecasts using `FORECAST.ETS` & simulated scenarios (e.g., impact of future DLCs)
+- 💻 SQL-based data modeling + Tableau dashboard for cross-analysis
 
 ---
 
-## 🧠 Key Insights
+## 🔍 Key Findings
 
-📌 Notable revenue spikes:
-1. **Record Quarters**:
-   - Q2 2015: 406k zł (Witcher 3 launch)
-   - Q4 2020: 1.54M zł (Cyberpunk 2077 launch)
-   - Q4 2023: 413k zł (Phantom Liberty DLC)
-3. **Growth Patterns** (Q2 2015 post-Witcher 3):
-   - Highest YoY growth: +2832%
-   - Largest QoQ jump: +14119% 
+📈 Revenue jumps:
+- **Q2 2015:** Witcher 3 release (+14119% QoQ growth)
+- **Q4 2020:** Cyberpunk 2077 launch (1.54M zł)
+- **Q4 2023:** Phantom Liberty release
 
----
+💬 Sentiment trends:
+- Negative dip post-CP2077 release (Q1 2021)
+- Positive shift around Edgerunners & patch 2.0
 
-## 📊 Tools & Methods
-
-- **Excel** – for manual data cleaning, transformation, and visualization
-- **FORECAST.LINEAR** – used for projecting simple trends
-- **Annotations** – each quarter has optional comments tied to release or patch events
-- **Manual labeling** – patch/DLC milestones added to enhance understanding
+🎯 Insight:
+- Sentiment and revenue loosely correlate post-launch
+- Upcoming updates (e.g. rumored Witcher 3 DLC or CP2077 patch 2.3) may reignite engagement
 
 ---
 
-## 📌 Next Steps / Extensions
+## 🧰 Tools & Techniques
 
-If you’d like to take this further:
+- **Excel** – Data cleaning, labeling, forecasting (`FORECAST.LINEAR`, `ETS`)
+- **Oracle SQL** – Tables for revenue and review sentiment
+- **Python** – Used for scraping & sentiment scoring via 🤖 [`siebert/sentiment-roberta-large-english`](https://huggingface.co/siebert/sentiment-roberta-large-english) (from Hugging Face)
+- **Tableau** – For interactive dashboards and multi-metric analysis
+- **AI Assistance** – Python code and problem-solving were supported using ChatGPT for guidance and debugging.
 
-- Export data into SQL or Python and repeat the analysis using more advanced statistical models
-- Add user sentiment by integrating Steam review data or social media trends
-- Use Tableau/Power BI for an interactive version of the charts
-- Improve forecast logic with machine learning (ARIMA, Holt-Winters, etc.)
+
+---
+
+## 📊 Tableau Dashboards
+
+- **Sentiment vs Revenue Scatterplot**
+- **Quarterly Revenue + Avg Sentiment Trends**
+- **KPI cards** for top quarters
+- **Story-style narrative** with CDPR highlights
+
+📷 See sample screenshots in `exports/tableau_dash_screenshots/`.
 
 ---
 
 ## 📎 Notes
 
-- All financial data is sourced from CD Projekt’s **official quarterly reports**.
 - Revenue is expressed in **thousands of PLN (Polish złoty)**.
-- Forecasts are for demonstration purposes only and are **not financial advice**.
+- Data is sourced from **official CD Projekt financial reports** and **Steam reviews**.
+- Forecasting is illustrative only — **not financial advice**.
+
+---
+
+## 🔄 Possible Extensions
+
+- Use NLP clustering to group review themes over time
+- Run time series models (e.g. ARIMA, Prophet) for sharper forecasting
+- Track social media engagement vs in-game events
+- Compare CDPR with other studios’ sentiment/revenue cycles
 
 ---
 
@@ -81,16 +104,18 @@ If you’d like to take this further:
 
 **Szymon Janusz**  
 Data Analyst | SQL • Excel • Tableau  
-Fan of CDPR titles and digital game economies.
+Gaming & data enthusiast. Focused on digital economies and user perception.
+
+🔗 [GitHub Profile](https://github.com/szymon-janusz)
 
 ---
 
 ## 📄 License
 
-This project uses public financial data. All additional material is published under the [Creative Commons CC BY 4.0 License](https://creativecommons.org/licenses/by/4.0/).
+This project uses public and fan-accessible data and is shared under the [Creative Commons CC BY 4.0 License](https://creativecommons.org/licenses/by/4.0/).
 
 ---
 
-## ⭐️ If you like the project...
+## ⭐️ Like the Project?
 
-Feel free to fork, clone, or star ⭐ this repo to support future projects!
+Feel free to fork, clone, or ⭐ star this repo. Feedback and PRs welcome!
