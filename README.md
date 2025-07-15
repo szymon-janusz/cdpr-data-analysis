@@ -10,7 +10,7 @@ An analytical project exploring how major content releases (patches, DLCs, media
 ---
 
 ## 📁 Project Structure
-
+```
 cdpr-data-analysis/
 │
 ├── data/
@@ -31,7 +31,7 @@ cdpr-data-analysis/
 │
 ├── README.md
 └── README_PL.md
-
+```
 ---
 
 ## 📈 What This Project Covers
