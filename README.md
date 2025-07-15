@@ -17,18 +17,19 @@ cdpr-data-analysis/
 │ ├── CDPR_Revenue_Analysis.xlsx # Excel workbook: cleaned data, charts, forecasts
 │ ├── key-financial-data-q1-2025-2.xlsx # Raw financials from CDPR report
 │ ├── cdpr_revenue.csv # (Exported) Excel table
-│ └── oracle_import.sql # SQL for table creation & inserts
+│ ├── queries.sql # queries I used during data analysis in SQL Developer
+│ └── import_views.sql # SQL for table creation & inserts (only views I worked on because table with 700k+ reviews weight too much)
+
 │
 ├── exports/
 │ ├── excel_screenshots/
 │   ├── witcher_chart.png
 │   └── cyberpunk_chart.png
 │ ├── tableau_screenshots/
-│   ├── sentiment_vs_revenue.png
 │   └── dashboard_overview.png
 │
 ├── tableau/
-│ └── sentiment_revenue_dashboard.twb # Tableau workbook file
+│ └── sentiment_revenue_dashboard.twbx # Tableau workbook file
 │
 ├── README.md
 └── README_PL.md
@@ -65,7 +66,7 @@ cdpr-data-analysis/
 ## 🧰 Tools & Techniques
 
 - **Excel** – Data cleaning, labeling, forecasting (`FORECAST.LINEAR`, `ETS`)
-- **Oracle SQL** – Tables for revenue and review sentiment
+- **Oracle SQL** – Tables for revenue and review sentiment (SQL DEveloper)
 - **Python** – Used for scraping & sentiment scoring via 🤖 [`siebert/sentiment-roberta-large-english`](https://huggingface.co/siebert/sentiment-roberta-large-english) (from Hugging Face)
 - **Tableau** – For interactive dashboards and multi-metric analysis
 - **AI Assistance** – Python code and problem-solving were supported using ChatGPT for guidance and debugging.
