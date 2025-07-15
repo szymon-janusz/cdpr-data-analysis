@@ -18,7 +18,7 @@ cdpr-data-analysis/
 │ ├── key-financial-data-q1-2025-2.xlsx # Raw financials from CDPR report
 │ ├── cdpr_revenue.csv # (Exported) Excel table
 │ ├── queries.sql # queries I used during data analysis in SQL Developer
-│ └── import_views.sql # SQL for table creation & inserts (only views I worked on because the table with reviews weighs too much)
+│ └── import_views.sql # SQL for table creation & inserts (I’m only publishing the views I worked on due to GDPR.)
 
 │
 ├── exports/
