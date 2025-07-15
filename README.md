@@ -20,11 +20,12 @@ cdpr-data-analysis/
 │ └── oracle_import.sql # SQL for table creation & inserts
 │
 ├── exports/
-│ ├── witcher_chart.png
-│ ├── cyberpunk_chart.png
-│ └── tableau_dash_screenshots/
-│ ├── sentiment_vs_revenue.png
-│ └── dashboard_overview.png
+│ ├── excel_screenshots/
+│   ├── witcher_chart.png
+│   └── cyberpunk_chart.png
+│ ├── tableau_screenshots/
+│   ├── sentiment_vs_revenue.png
+│   └── dashboard_overview.png
 │
 ├── tableau/
 │ └── sentiment_revenue_dashboard.twb # Tableau workbook file
