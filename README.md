@@ -5,7 +5,7 @@
 
 An analytical project exploring how major content releases (patches, DLCs, media tie-ins) and player sentiment affected CD PROJEKT's revenue across titles like **The Witcher 3** and **Cyberpunk 2077**.
 
-🔍 The goal: Evaluate whether upcoming expansions might bring measurable financial impact — based on historical patterns, user reviews, and revenue data.
+🔍 The goal: Evaluate whether upcoming expansions might bring a measurable financial impact — based on historical patterns, user reviews, and revenue data.
 
 ---
 
@@ -18,7 +18,7 @@ cdpr-data-analysis/
 │ ├── key-financial-data-q1-2025-2.xlsx # Raw financials from CDPR report
 │ ├── cdpr_revenue.csv # (Exported) Excel table
 │ ├── queries.sql # queries I used during data analysis in SQL Developer
-│ └── import_views.sql # SQL for table creation & inserts (only views I worked on because table with 700k+ reviews weight too much)
+│ └── import_views.sql # SQL for table creation & inserts (only views I worked on because the table with reviews weighs too much)
 
 │
 ├── exports/
