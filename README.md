@@ -16,7 +16,7 @@ cdpr-data-analysis/
 ├── data/
 │ ├── CDPR_Revenue_Analysis.xlsx # Excel workbook: cleaned data, charts, forecasts
 │ ├── key-financial-data-q1-2025-2.xlsx # Raw financials from CDPR report
-│ ├── full_reviews_sentiment.csv # (Exported) sentiment data from Steam
+│ ├── cdpr_revenue.csv # (Exported) Excel table
 │ └── oracle_import.sql # SQL for table creation & inserts
 │
 ├── exports/
